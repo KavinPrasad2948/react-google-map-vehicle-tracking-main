@@ -10,8 +10,8 @@ import LinearProgress from '@mui/material/LinearProgress';
 
 function App() {
   
-  const { data: paths} = useFetch('http://localhost:5000/api/paths');
-  const { data: stops } = useFetch('http://localhost:5000/api/stops');
+  const { data: paths} = useFetch('https://vehicle-maps-backend.onrender.com/api/paths');
+  const { data: stops } = useFetch('https://vehicle-maps-backend.onrender.com/api/stops');
   const mapURL = `https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${config.mapsKey}`;
   
   return (
